@@ -1,0 +1,64 @@
+body {
+            margin: 0; /* Remove margem padrão do body */
+            padding: 0; /* Remove padding padrão do body */
+        }
+
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+            padding: 20px 0; /* Padding superior e inferior */
+            width: 100%; /* Cabeçalho ocupa toda a largura */
+        }
+
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+
+        footer {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+            color: #333; /* Cor do texto do rodapé */
+            width: 100%; /* Rodapé ocupa toda a largura */
+            position: relative; /* Para garantir que o rodapé fique na parte inferior */
+        }
+
+        .container {
+            max-width: 1200px; /* Largura máxima da página */
+            margin: 0 auto; /* Centraliza a container */
+            padding: 20px; /* Adiciona padding ao container */
+        }
+
+        .info-box {
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 15px; /* Espaçamento interno */
+            margin: 10px 0; /* Margem entre quadradinhos */
+            font-style: italic; /* Texto em itálico */
+        }
+
+.navbar {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+        }
+
+        .navbar-nav {
+            margin: 0 auto; /* Centraliza os botões de navegação */
+        }
+
+        .navbar-nav .nav-link {
+            color: #333; /* Cor do texto dos botões de navegação */
+            border: 1px solid #333; /* Borda em volta de cada botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin: 0 5px; /* Espaçamento lateral entre os botões */
+            padding: 10px; /* Espaçamento interno dos botões */
+        }
+
+        .chart-container {
+            display: flex; /* Usar flexbox para centralizar */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 40vh; /* Altura do gráfico */
+            width: 100%; /* Largura do gráfico */
+            margin: 20px 0; /* Margem acima e abaixo do gráfico */
+        }

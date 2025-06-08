@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Rural - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- JavaScript do Bootstrap e dependências -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+         .navbar {
+            background-color: #ffeb3b;
+        }
+
+        .navbar-nav {
+            margin: 0 auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 0 5px;
+            padding: 10px;
+}
+        footer {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+            color: #333; /* Cor do texto do rodapé */
+        }
+
+        .cabecalho {
+            background-color: #333333;
+        }
+
+        .cabecalho h1 {
+            color: white;
+        }
+
+        .cabecalho h3 {
+            color: yellow;
+        }
+
+        .info-section {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centraliza o conteúdo */
+            margin: 20px 0;
+            padding: 20px; /* Adiciona um pouco de espaço interno */
+            border-radius: 10px; /* Bordas arredondadas para a seção */
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+        }
+
+        .info-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px; /* Espaço entre a imagem e o texto */
+        }
+
+        .card {
+            margin: 10px 0;
+            cursor: pointer; /* Indica que o card é clicável */
+        }
+
+        .chart-container {
+            margin: 20px 0;
+            padding: 20px; /* Adiciona um pouco de espaço interno */
+            border-radius: 10px; /* Bordas arredondadas para a seção do gráfico */
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+            text-align: center; /* Centraliza o texto no gráfico */
+        }
+
+        .carousel {
+            margin: 20px 0;
+        }
+
+        .container {
+            margin: 20px auto; /* Margem para afastar o conteúdo das bordas da tela e centralizar */
+            max-width: 1200px; /* Limita a largura máxima da página */
+        }
+
+        .text-padding {
+            padding: 0 15px; /* Adiciona espaçamento à esquerda e à direita */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center" style="padding: 20px 0;">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="index.html">Zona do Campo</a>
+                    <a class="nav-link" href="energia.html">Rede de Energia</a>
+                    <a class="nav-link" href="agua.html">Água ns Produção</a>
+                    <a class="nav-link" href="producao.html">Produção Agrícola</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="musica" autoplay loop playsinline>
+  <source src="Stranger of Sun(1).mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 1; // volume máximo
+</script>
+
+    <audio id="somClick" src="Luiz (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+    <main class="container mt-5">
+        <div class="row mb-4">
+    <div class="col-md-4">
+        <img src="./assets/image/campo.png.jpeg" class="img-fluid rounded" alt="Produção Rural">
+    </div>
+    <div class="col-md-8">
+       <h2>Zona Rural</h2>
+<p>A zona rural é uma área caracterizada por sua paisagem natural, agricultura e comunidades pequenas. É o local onde a produção de alimentos e a conexão com a natureza são predominantes. A vida no campo é marcada por tradições, cultura local e um ritmo de vida mais tranquilo. Além disso, a zona rural desempenha um papel vital na economia, fornecendo produtos essenciais como grãos, frutas, verduras e carnes.</p>
+
+<p>As comunidades rurais são muitas vezes unidas, com laços fortes entre os moradores. A vida no campo também oferece oportunidades para o turismo rural, onde visitantes podem experimentar a cultura local, participar de festivais e aprender sobre práticas agrícolas sustentáveis. A preservação do meio ambiente é um foco importante, já que a agricultura sustentável é fundamental para manter a biodiversidade e os recursos naturais.</p>
+
+<p>Com o avanço da tecnologia, a agricultura também está se modernizando, utilizando técnicas como a agricultura de precisão e o uso de drones para monitorar as plantações. Isso não só aumenta a eficiência, mas também ajuda a minimizar o impacto ambiental. A zona rural é, portanto, um espaço de oportunidades e desafios, onde a tradição e a inovação se encontram em harmonia.</p>
+
+<p>Além disso, a valorização da zona rural é essencial para garantir a qualidade de vida das populações que ali vivem, promovendo o desenvolvimento social, econômico e ambiental de forma integrada. Investir em infraestrutura, educação e tecnologia no campo fortalece essas comunidades, tornando-as mais resilientes e capazes de enfrentar os desafios do século XXI.</p>
+
+    </div>
+</div>
+  </main>
+
+    <div class="container text-padding">
+        <h1>Benefícios da Agricultura Sustentável</h1>
+
+<p>A agricultura sustentável é uma abordagem inovadora e indispensável para garantir a segurança alimentar do presente, sem comprometer a capacidade das gerações futuras de suprirem suas próprias necessidades. Ao integrar práticas que respeitam o equilíbrio dos ecossistemas, essa forma de cultivo promove a conservação dos recursos naturais, como solo, água e biodiversidade, essenciais para a continuidade da produção agrícola.</p>
+
+<p>Além de proteger o meio ambiente, a agricultura sustentável fortalece a economia local ao gerar empregos, valorizar produtos regionais e reduzir custos com insumos químicos. Isso contribui para uma cadeia produtiva mais resiliente e menos vulnerável a crises ambientais e econômicas.</p>
+
+<p>No aspecto social, essa prática melhora a qualidade de vida das comunidades rurais, promovendo saúde pública, segurança alimentar e inclusão social. Para que essa transformação seja efetiva e duradoura, é imprescindível que agricultores, consumidores, instituições e formuladores de políticas públicas atuem de forma integrada, incentivando a adoção de técnicas sustentáveis, capacitação e políticas de incentivo.</p>
+
+<p>Assim, a agricultura sustentável se apresenta como um caminho sólido para o desenvolvimento rural equilibrado, capaz de garantir alimentos nutritivos, conservar o planeta e construir sociedades mais justas e prósperas.</p>
+
+
+        <h2>Principais Benefícios:</h2>
+        <ol>
+            <li><strong>Preservação do Meio Ambiente:</strong> A agricultura sustentável utiliza técnicas que minimizam o uso de produtos químicos e conservam os recursos naturais, como água e solo.</li>
+            <li><strong>Melhoria da Qualidade do Solo:</strong> Práticas como rotação de culturas e compostagem ajudam a manter a fertilidade do solo e a prevenir a erosão.</li>
+            <li><strong>Redução da Pegada de Carbono:</strong> Ao evitar o uso excessivo de fertilizantes e pesticidas sintéticos, a agricultura sustentável contribui para a redução das emissões de gases de efeito estufa.</li>
+            <li><strong>Promoção da Biodiversidade:</strong> A diversidade de culturas e a preservação de habitats naturais ajudam a manter a biodiversidade, essencial para a saúde dos ecossistemas.</li>
+            <li><strong>Benefícios Econômicos:</strong> A agricultura sustentável pode ser mais rentável a longo prazo, pois reduz custos com insumos e melhora a resiliência das comunidades agrícolas.</li>
+        </ol>
+    </div>
+
+    <!-- Gráfico de Colunas -->
+    <div class="container chart-container">
+        <h3>Gráfico Comparativo: Campo vs. Cidade</h3>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="container">
+    <h1>Como a Agricultura Sustentável Recupera Solos Degradados</h1>
+
+    <p>Uma das maiores vantagens da agricultura sustentável está na recuperação e conservação dos solos, frequentemente degradados por práticas convencionais como o uso excessivo de fertilizantes químicos e o desmatamento. Técnicas como o plantio direto, a rotação de culturas e o uso de adubos orgânicos ajudam a restaurar a fertilidade do solo, aumentam sua capacidade de retenção de água e reduzem a erosão.</p>
+
+    <p>Além de revitalizar áreas antes improdutivas, essas práticas promovem o aumento da biodiversidade do solo, criando um ambiente mais saudável para microrganismos benéficos e contribuindo diretamente para o crescimento das plantas. Com isso, o agricultor não apenas melhora sua produtividade de forma sustentável, como também reduz sua dependência de insumos externos.</p>
+
+    <p>Investir na saúde do solo é investir no futuro da produção agrícola. A agricultura sustentável oferece caminhos práticos e eficientes para transformar áreas degradadas em solos vivos e produtivos, garantindo resultados positivos tanto para o meio ambiente quanto para a rentabilidade do produtor.</p>
+  </div>
+    
+    <!-- Carrossel -->
+    <div class="container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagem-carrossel1.jpg" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem-carrossel2.jpg" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagem-carrossel3.jpg" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>Zona Rural</strong><br>
+  Fonte: Instituto Brasileiro de Geografia e Estatística (IBGE)<br>
+  <a href="https://www.ibge.gov.br" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.ibge.gov.br
+  </a></p>
+</div>
+
+    <footer class="text-center py-3 mt-5">
+        <small style="color: #333;">&copy; 2025 Agrinho | Site desenvolvido por estudante do Ensino Fundamental com orgulho rural 🌱</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Agricultura (Campo)', 'Pecuária (Campo)', 'Silvicultura (Campo)', 'Turismo Rural (Campo)', 'Indústria (Cidade)', 'Serviços (Cidade)', 'Comércio (Cidade)'],
+                datasets: [{
+                    label: 'Contribuição Econômica (em %)',
+                    data: [30, 25, 15, 10, 20, 20, 10], // Exemplo de dados
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)', // Agricultura
+                        'rgba(153, 102, 255, 0.6)', // Pecuária
+                        'rgba(255, 206, 86, 0.6)', // Silvicultura
+                        'rgba(255, 99, 132, 0.6)', // Turismo Rural
+                        'rgba(54, 162, 235, 0.6)', // Indústria
+                        'rgba(255, 159, 64, 0.6)', // Serviços
+                        'rgba(255, 99, 71, 0.6)' // Comércio
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 71, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Contribuição Econômica (%)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Setores (Campo e Cidade)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

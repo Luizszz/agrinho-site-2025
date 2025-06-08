@@ -1,0 +1,72 @@
+footer {
+  background-color: #ffeb3b; /* Amarelo mais claro */
+  color: #333; /* Cor do texto do rodapé */
+  width: 100%; /* Garante que o rodapé ocupe toda a largura */
+  position: relative; /* Para evitar problemas de posicionamento */
+  bottom: 0; /* Alinha o rodapé na parte inferior */
+  padding: 1rem 0; /* Adiciona um pouco de espaçamento interno */
+}
+.body {
+            margin: 0; /* Remove margem padrão do body */
+            padding: 0; /* Remove padding padrão do body */
+            display: flex; /* Usa flexbox para alinhar o rodapé */
+            flex-direction: column; /* Organiza os elementos em coluna */
+            min-height: 100vh; /* Altura mínima da página igual à altura da viewport */
+        }
+
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+            padding: 20px 0; /* Padding superior e inferior */
+            width: 100%; /* Cabeçalho ocupa toda a largura */
+        }
+
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+
+        footer {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+            color: #333; /* Cor do texto do rodapé */
+            width: 100%; /* Rodapé ocupa toda a largura */
+            padding: 20px 0; /* Adiciona padding ao rodapé */
+            margin-top: auto; /* Empurra o rodapé para baixo */
+        }
+
+        .navbar {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+        }
+
+        .navbar-nav {
+            margin: 0 auto; /* Centraliza os botões de navegação */
+        }
+
+        .navbar-nav .nav-link {
+            color: #333; /* Cor do texto dos botões de navegação */
+            border: 1px solid #333; /* Borda em volta de cada botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin: 0 5px; /* Espaçamento lateral entre os botões */
+            padding: 10px; /* Espaçamento interno dos botões */
+        }
+
+        .container {
+            max-width: 1200px; /* Largura máxima da página */
+            margin: 0 auto; /* Centraliza a container */
+            padding: 20px; /* Adiciona padding ao container */
+            flex-grow: 1; /* Faz o conteúdo principal crescer */
+        }
+
+        .info-box {
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 15px; /* Espaçamento interno */
+            margin: 10px 0; /* Margem entre quadradinhos */
+            font-style: italic; /* Texto em itálico */
+        }
+
+        .card {
+            margin-bottom: 20px; /* Margem inferior para os cards */
+        }

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página sobre Produção Agrícola</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .body {
+            margin: 0; /* Remove margem padrão do body */
+            padding: 0; /* Remove padding padrão do body */
+            display: flex; /* Usa flexbox para alinhar o rodapé */
+            flex-direction: column; /* Organiza os elementos em coluna */
+            min-height: 100vh; /* Altura mínima da página igual à altura da viewport */
+        }
+
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+            padding: 20px 0; /* Padding superior e inferior */
+            width: 100%; /* Cabeçalho ocupa toda a largura */
+        }
+
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+
+        footer {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+            color: #333; /* Cor do texto do rodapé */
+            width: 100%; /* Rodapé ocupa toda a largura */
+            padding: 20px 0; /* Adiciona padding ao rodapé */
+            margin-top: auto; /* Empurra o rodapé para baixo */
+        }
+
+        nav {
+  min-height: 102px; /* ajuste o valor para o tamanho que quiser */
+  display: flex; /* para alinhamento interno funcionar bem */
+  align-items: center; /* centraliza verticalmente o conteúdo */
+}
+
+
+       .navbar {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+        }
+
+        .navbar-nav {
+            margin: 0 auto; /* Centraliza os botões de navegação */
+        }
+
+        .navbar-nav .nav-link {
+            color: #333; /* Cor do texto dos botões de navegação */
+            border: 1px solid #333; /* Borda em volta de cada botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin: 0 5px; /* Espaçamento lateral entre os botões */
+            padding: 10px; /* Espaçamento interno dos botões */
+        }
+
+
+        .container {
+            max-width: 1200px; /* Largura máxima da página */
+            margin: 0 auto; /* Centraliza a container */
+            padding: 20px; /* Adiciona padding ao container */
+            flex-grow: 1; /* Faz o conteúdo principal crescer */
+        }
+
+        .info-box {
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 15px; /* Espaçamento interno */
+            margin: 10px 0; /* Margem entre quadradinhos */
+            font-style: italic; /* Texto em itálico */
+        }
+
+        .card {
+            margin-bottom: 20px; /* Margem inferior para os cards */
+        }
+
+        .container {
+  max-width: 1140px;  /* ou outra largura que combine com seu layout */
+  margin: 0 auto;     /* centraliza */
+  padding: 0 15px;    /* dá um pequeno espaço nas laterais */
+  box-sizing: border-box;
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="index.html">Zona do Campo</a>
+                    <a class="nav-link" href="energia.html">Rede de Energia</a>
+                    <a class="nav-link" href="agua.html">Água na Produção</a>
+                    <a class="nav-link" href="producao.html">Produção Agrícola</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="musica" autoplay loop playsinline>
+  <source src="Stranger of Sun(1).mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 1; // volume máximo
+</script>
+
+    <audio id="somClick" src="Luiz (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<main class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <h2>Produção Agrícola: Um Pilar da Sustentabilidade</h2>
+<p>A produção agrícola é essencial para garantir a alimentação da população mundial e impulsionar a economia de diversos países. No campo, agricultores utilizam técnicas que vão desde métodos tradicionais até tecnologias avançadas para aumentar a produtividade, melhorar a qualidade dos alimentos e otimizar o uso dos recursos naturais.</p>
+
+<p>Nas áreas urbanas, a agricultura urbana tem se consolidado como uma solução viável para ampliar a segurança alimentar, oferecendo alimentos frescos e saudáveis, enquanto fortalece a relação entre as zonas rurais e urbanas, criando cadeias de abastecimento mais curtas e sustentáveis.</p>
+
+<p>A sustentabilidade é um foco central na agricultura contemporânea, com práticas como rotação de culturas, uso de fertilizantes orgânicos e manejo eficiente da água. Além disso, a incorporação de tecnologias inovadoras, como sensores e sistemas de monitoramento, contribui para aumentar a produtividade e reduzir o desperdício de recursos.</p>
+
+<p>Além disso, a integração de práticas agroecológicas promove a conservação da biodiversidade e o equilíbrio dos ecossistemas, garantindo que a produção agrícola seja feita de forma responsável e duradoura, beneficiando tanto as gerações atuais quanto as futuras.</p>
+
+
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/image/prod2.png.jpeg" class="img-fluid rounded" alt="Produção Rural">
+        </div>
+  </div>
+  </div>
+  </main>
+
+  <div class="container">
+  <h1>Inovação Tecnológica e Sustentabilidade na Agricultura Moderna</h1>
+  <p>A incorporação de tecnologias inovadoras tem transformado profundamente a agricultura, promovendo práticas mais sustentáveis e eficientes. Ferramentas como sensores de solo, drones para monitoramento de plantações e sistemas de agricultura de precisão permitem aos produtores otimizar o uso de recursos, como água e fertilizantes, reduzindo desperdícios e impactos ambientais. Além disso, essas tecnologias facilitam o diagnóstico precoce de pragas e doenças, permitindo intervenções mais rápidas e menos agressivas ao ecossistema.</p>
+
+  <p>Outra inovação importante está na digitalização da gestão agrícola, com softwares que auxiliam no planejamento de plantio, na previsão climática e na logística de distribuição. Isso contribui para aumentar a produtividade, melhorar a qualidade dos alimentos e diminuir as perdas ao longo da cadeia produtiva. Essas soluções tecnológicas são especialmente valiosas para pequenos agricultores, que ganham acesso a informações e práticas que antes eram restritas a grandes propriedades.</p>
+
+  <p>O uso de energias renováveis na agricultura, como painéis solares para bombear água ou alimentar equipamentos, também vem crescendo, alinhando a produção agrícola com as metas globais de redução de emissões de carbono. Assim, a inovação tecnológica não apenas melhora a eficiência econômica do setor, mas também fortalece a sua sustentabilidade ambiental, garantindo alimentos mais saudáveis para a população atual e futura.</p>
+</div>
+
+<div class="container">
+  <h3 class="mt-5">Tabela de Produção Agrícola</h3>
+  <table class="table table-bordered mt-3">
+    <thead>
+      <tr>
+        <th>Ano</th>
+        <th>Produção no Campo (toneladas)</th>
+        <th>Produção na Cidade (toneladas)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2015</td>
+        <td>5000</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td>5500</td>
+        <td>400</td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td>6000</td>
+        <td>450</td>
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>6200</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>2019</td>
+        <td>6500</td>
+        <td>600</td>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>7000</td>
+        <td>700</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <h3 class="mt-5">A Importância da Integração entre Campo e Cidade</h3>
+  <p>A integração entre o campo e a cidade desempenha um papel fundamental não apenas para melhorar a segurança alimentar, mas também para fortalecer as economias locais e promover um desenvolvimento mais sustentável. Quando os produtos agrícolas são cultivados em regiões próximas às áreas urbanas, os consumidores têm acesso facilitado a alimentos frescos, nutritivos e de alta qualidade. Essa proximidade reduz drasticamente a necessidade de longos transportes, o que diminui os custos logísticos e, principalmente, as emissões de gases de efeito estufa associadas ao transporte rodoviário ou aéreo. Como resultado, contribui-se diretamente para a redução da pegada de carbono do setor alimentício, alinhando a produção agrícola com as metas ambientais globais.</p>
+
+  <p>Além disso, essa conexão estreita entre campo e cidade favorece a valorização do trabalho dos agricultores por parte dos consumidores urbanos, que passam a entender melhor os processos envolvidos na produção dos alimentos que chegam às suas mesas. Essa conscientização é essencial para estimular o consumo responsável e a preferência por produtos cultivados por meio de práticas sustentáveis. Ao fortalecer essa relação, cria-se uma rede de apoio e incentivo à agricultura sustentável, incentivando a adoção de métodos que preservem os recursos naturais, respeitem o meio ambiente e garantam a saúde do solo e da água.</p>
+
+  <p>Outro aspecto importante dessa integração é o potencial para fomentar a agricultura urbana e periurbana, que transforma espaços ociosos em áreas produtivas, contribuindo para a geração de emprego e renda nas cidades, além de promover o acesso a alimentos frescos para populações vulneráveis. Programas de hortas comunitárias, mercados locais e feiras agrícolas urbanas são exemplos de iniciativas que conectam diretamente produtores e consumidores, fortalecendo o comércio local e a economia circular.</p>
+
+  <p>Por fim, essa sinergia entre o campo e a cidade é crucial para assegurar que as futuras gerações tenham acesso contínuo a alimentos saudáveis e produzidos de forma sustentável. Ao valorizar e integrar os dois ambientes, cria-se um sistema alimentar mais resiliente, capaz de enfrentar desafios como as mudanças climáticas, a urbanização acelerada e o crescimento populacional. Dessa forma, a cooperação entre zonas rurais e urbanas se torna um pilar essencial para a construção de um futuro mais justo, sustentável e próspero para todos.</p>
+</div>
+
+ <div class="container mt-5">
+        <h3>Cards Informativos</h3>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card" role="button" data-bs-toggle="modal" data-bs-target="#modalTecnologiasAgricolas">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologias Agrícolas</h5>
+                        <p class="card-text">Inovações tecnológicas estão transformando a agricultura, aumentando a produtividade e a eficiência.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" role="button" data-bs-toggle="modal" data-bs-target="#modalSustentabilidade">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustentabilidade na Agricultura</h5>
+                        <p class="card-text">Práticas sustentáveis são essenciais para preservar recursos naturais e garantir a produção a longo prazo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="modal fade" id="modalSustentabilidade" tabindex="-1" aria-labelledby="modalSustentabilidadeLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalSustentabilidadeLabel">Sustentabilidade na Agricultura</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A sustentabilidade na agricultura envolve práticas que respeitam o meio ambiente, como a rotação de culturas e o uso de adubos orgânicos, para garantir a saúde do solo e a biodiversidade.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+  <h3 class="mt-5">Falas de Pessoas</h3>
+  <div class="row mt-3">
+    <div class="col-md-6">
+      <div class="blockquote border rounded p-3" style="background-color: #f8f9fa;">
+        <p class="mb-0" style="font-style: italic;">"A produção agrícola é a base da nossa economia. Precisamos apoiar nossos agricultores."</p>
+        <p class="mb-0" style="font-weight: bold;">Carlos, agricultor</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="blockquote border rounded p-3" style="background-color: #f8f9fa;">
+        <p class="mb-0" style="font-style: italic;">"A agricultura urbana é uma solução inovadora para a segurança alimentar nas cidades."</p>
+        <p class="mb-0" style="font-weight: bold;">Ana, urbanista</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>Produção Agrícola</strong><br>
+  Fonte: Empresa Brasileira de Pesquisa Agropecuária (EMBRAPA)<br>
+  <a href="https://www.embrapa.br" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.embrapa.br
+  </a></p>
+</div>
+</div>
+
+<footer class="text-center py-3">
+        <small style="color: #333;">&copy; 2025 Agrinho | Site desenvolvido por estudante do Ensino Fundamental com orgulho rural 🌱</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-4z5y5cO3m5f1P5B8E5cLq1jv5e+0sP1V5mY5+0sP1V5mY5+0sP1V5mY5+0sP1" crossorigin="anonymous"></script>
+</body>
+
+</html>

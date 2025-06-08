@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da Água</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0; /* Remove margem padrão do body */
+            padding: 0; /* Remove padding padrão do body */
+        }
+
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+            padding: 20px 0; /* Padding superior e inferior */
+            width: 100%; /* Cabeçalho ocupa toda a largura */
+        }
+
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+
+        footer {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+            color: #333; /* Cor do texto do rodapé */
+            width: 100%; /* Rodapé ocupa toda a largura */
+            position: relative; /* Para garantir que o rodapé fique na parte inferior */
+        }
+
+        .container {
+            max-width: 1200px; /* Largura máxima da página */
+            margin: 0 auto; /* Centraliza a container */
+            padding: 20px; /* Adiciona padding ao container */
+        }
+
+        .info-box {
+            background-color: #f9f9f9; /* Fundo claro para destacar a seção */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 15px; /* Espaçamento interno */
+            margin: 10px 0; /* Margem entre quadradinhos */
+            font-style: italic; /* Texto em itálico */
+        }
+
+.navbar {
+            background-color: #ffeb3b; /* Amarelo mais claro */
+        }
+
+        .navbar-nav {
+            margin: 0 auto; /* Centraliza os botões de navegação */
+        }
+
+        .navbar-nav .nav-link {
+            color: #333; /* Cor do texto dos botões de navegação */
+            border: 1px solid #333; /* Borda em volta de cada botão */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin: 0 5px; /* Espaçamento lateral entre os botões */
+            padding: 10px; /* Espaçamento interno dos botões */
+        }
+
+        .chart-container {
+            display: flex; /* Usar flexbox para centralizar */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 40vh; /* Altura do gráfico */
+            width: 100%; /* Largura do gráfico */
+            margin: 20px 0; /* Margem acima e abaixo do gráfico */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link" href="index.html">Zona do Campo</a>
+                    <a class="nav-link" href="energia.html">Rede de Energia</a>
+                    <a class="nav-link" href="agua.html">Água na Produção</a>
+                    <a class="nav-link" href="producao.html">Produção Agrícola</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="musica" autoplay loop playsinline>
+  <source src="Stranger of Sun(1).mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 1; // volume máximo
+</script>
+
+    <audio id="somClick" src="Luiz (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+    <div class="container">
+        <h2 class="mt-4">A Importância da Água</h2>
+        <p>A água é um recurso essencial para a vida, desempenhando um papel crucial tanto no campo quanto na cidade. No contexto rural, a água é fundamental para a agricultura, sendo utilizada para irrigação, criação de animais e manutenção de ecossistemas. Sem água suficiente, a produção de alimentos fica ameaçada, impactando a segurança alimentar e a economia local.</p>
+
+        <p>Nas áreas urbanas, a água é igualmente vital. Ela é necessária para o consumo humano, saneamento básico e diversas atividades industriais. As cidades dependem de sistemas complexos de abastecimento de água, que muitas vezes enfrentam desafios como escassez, poluição e gestão inadequada dos recursos hídricos.</p>
+
+        <p>A gestão da água deve ser uma prioridade em todas as esferas, uma vez que a crescente demanda e as mudanças climáticas estão pressionando os recursos hídricos. Iniciativas de conservação e uso sustentável da água são essenciais para garantir que esse recurso permaneça disponível para as futuras gerações.</p>
+
+        <p>Além disso, a conscientização sobre a importância da água deve ser promovida em todos os níveis da sociedade. Programas educativos podem ajudar a informar as comunidades sobre práticas de conservação, uso eficiente da água e a importância de proteger as fontes hídricas.</p>
+
+        <p>Por fim, é fundamental que haja uma colaboração entre o setor público, privado e a sociedade civil para implementar políticas eficazes de gestão da água. Isso inclui investimentos em infraestrutura, tecnologias de tratamento e distribuição, além de ações para restaurar e preservar os ecossistemas aquáticos.</p>
+
+        <h3 class="mt-5">Imagens Relacionadas à Água</h3>
+        <div class="row mt-3">
+            <div class="col-md-4">
+    <img src="assets/image/agua2.png.jpeg" class="img-fluid rounded" alt="Água na Agricultura">
+</div>
+<div class="col-md-4">
+    <img src="assets/image/agua3.png.jpeg" class="img-fluid rounded" alt="Uso da Água na Cidade">
+</div>
+<div class="col-md-4">
+    <img src="assets/image/agua1.png.jpeg" class="img-fluid rounded" alt="Conservação da Água">
+</div>
+
+        </div>
+
+        <h3 class="mt-5">Água no Mundo: Escassez, Uso e Desigualdade</h3>
+        
+
+<ul>
+  <li><strong>A água cobre 71% da superfície da Terra,</strong> mas menos de 3% é doce — e grande parte dessa fração está congelada ou inacessível.</li>
+
+  <li><strong>Cerca de 2,2 bilhões de pessoas no mundo</strong> ainda vivem sem acesso regular a água potável segura, afetando saúde, higiene e qualidade de vida.</li>
+
+  <li><strong>A agricultura consome cerca de 70% da água doce disponível no planeta,</strong> tornando-se o setor mais dependente dos recursos hídricos e, ao mesmo tempo, o mais afetado pela escassez.</li>
+</ul>
+
+
+        <h3 class="mt-5">Informações Adicionais</h3>
+        <div class="info-box">
+            A água é essencial para a saúde humana, ajudando na digestão, regulação da temperatura e transporte de nutrientes.
+        </div>
+        <div class="info-box">
+            A poluição da água afeta não apenas a saúde humana, mas também a vida aquática e os ecossistemas.
+        </div>
+        <div class="info-box">
+            Práticas de conservação, como captação de água da chuva e irrigação eficiente, podem ajudar a economizar água.
+        </div>
+
+        <h3 class="mt-5">Gráfico de Uso da Água ao Longo dos Anos</h3>
+        <div class="chart-container">
+            <canvas id="waterUsageChart"></canvas>
+        </div>
+    </div>
+
+     <div class="container">
+    <h1>Impacto da Escassez Hídrica na Produtividade Agrícola</h1>
+
+    <p>Com a intensificação das mudanças climáticas, períodos prolongados de seca têm se tornado mais frequentes e severos, afetando diretamente a produção agrícola. Em diversas regiões do mundo, plantações inteiras estão sendo perdidas devido à falta de água no momento mais crítico do ciclo das culturas, como a floração e a frutificação.</p>
+
+    <p>Em áreas dependentes da irrigação, a escassez hídrica obriga muitos produtores a reduzirem suas áreas cultivadas ou priorizarem apenas culturas de menor consumo hídrico, o que pode comprometer tanto a diversidade alimentar quanto a renda agrícola. Além disso, a competição entre o uso urbano e agrícola da água tem gerado tensões em bacias hidrográficas vulneráveis.</p>
+
+    <p>Esse cenário exige a adoção urgente de tecnologias como a irrigação por gotejamento, sensores de umidade do solo e sistemas de captação e reuso de água da chuva. A eficiência no uso da água tornou-se, mais do que uma vantagem competitiva, uma questão de sobrevivência para muitas propriedades rurais.</p>
+  </div>
+
+  <div style="text-align: center; background-color: white; color: black; padding: 20px; font-family: Arial, sans-serif;">
+  <p><strong>A Importância da Água</strong><br>
+  Fonte: Agência Nacional de Águas (ANA)<br>
+  <a href="https://www.gov.br/ana/pt-br" target="_blank" style="color: purple; text-decoration: none;">
+    https://www.gov.br/ana/pt-br
+  </a></p>
+</div>
+
+    <footer class="text-center py-3 mt-5">
+        <small style="color: #333;">&copy; 2025 Agrinho | Site desenvolvido por estudante do Ensino Fundamental com orgulho rural 🌱</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('waterUsageChart').getContext('2d');
+        const waterUsageChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+                datasets: [{
+                    label: 'Uso da Água (em bilhões de litros)',
+                    data: [150, 160, 170, 180, 190, 210, 230, 250, 270],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: true,
+                    tension: 0.4 // Faz a linha ser ondulada
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Volume de Água (bilhões de litros)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Ano'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
